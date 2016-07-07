@@ -67,6 +67,7 @@
       get "/:provider/callback", AuthController, :callback
     end
     ```
+    scope must use `/auth` as root route.
 
 1. Your controller needs to implement callbacks to deal with `Ueberauth.Auth` and `Ueberauth.Failure` responses.
 
